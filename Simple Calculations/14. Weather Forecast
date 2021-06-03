@@ -1,0 +1,12 @@
+<?php
+
+$weather = readline();
+
+if($weather === "sunny")
+{
+    echo "It's warm outside!";
+}
+else
+{
+    echo "It's cold outside!";
+}

@@ -1,0 +1,33 @@
+<?php
+
+$x = floatval(readline());
+$y = floatval(readline());
+$h = floatval(readline());
+
+$squareWalls = pow($x, 2) * 2;
+
+$door = 1.2 * 2;
+
+$rectangleWalls = $x * $y * 2;
+
+$windows = pow(1.5, 2) * 2;
+
+$rectangleWalls -= $windows;
+
+$squareWalls -= $door;
+
+$rectangleRoof = $x * $y * 2;
+
+$triangleRoof = 0.5 * ($x * $h) * 2;
+
+$roof = $rectangleRoof + $triangleRoof;
+
+$walls = $rectangleWalls + $squareWalls;
+
+$greenPaint = $walls / 3.4;
+
+$redPaint = $roof / 4.3;
+
+echo number_format($greenPaint, 2, ".", "") . "\n";
+
+echo number_format($redPaint, 2, ".", "") . "\n";

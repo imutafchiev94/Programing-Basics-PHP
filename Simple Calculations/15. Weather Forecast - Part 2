@@ -1,0 +1,34 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+$degreese = floatval(readline());
+
+if($degreese >= 26 && $degreese <= 35)
+{
+    echo "Hot";
+}
+else if($degreese < 26 && $degreese > 20)
+{
+    echo "Warm";
+}
+else if($degreese <= 20 && $degreese >= 15)
+{
+    echo "Mild";
+}
+else if($degreese < 15 && $degreese >= 12)
+{
+    echo "Cool";
+}
+else if($degreese < 12 && $degreese >= 5)
+{
+    echo "Cold";
+}
+else
+{
+    echo "unknown";
+}

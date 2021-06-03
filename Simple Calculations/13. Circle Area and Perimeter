@@ -1,0 +1,9 @@
+<?php
+
+$r = floatval(readline());
+
+$perimeter = 2 * pi()*$r;
+$area = pi() * pow($r, 2);
+
+echo number_format($area, 2, ".", "") . "\n";
+echo number_format($perimeter, 2, ".", "") . "\n";
